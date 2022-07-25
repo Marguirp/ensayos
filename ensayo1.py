@@ -2,7 +2,7 @@ from collections import namedtuple
 import altair as alt
 import math
 import pandas as pd
-import streamlit as st
+
 
 """
 # Calculadora de puntos (beta)
@@ -12,10 +12,14 @@ forums](https://discuss.streamlit.io).
 """
 
 
-with st.echo(code_location='below'):
-    papers = st.slider("Number of points in spiral", 0, 100)
-    doctorado = st.slider("Number of turns in spiral", 0, 1)
+a = 0
+doct = 0
+papers = 0
 
-    print("puntos totales: ",papers*2 + doctorado*10)
-    
+print("Papers: ")
+papers = int(input())
+print("Título de doctorado: Si: 1, No: 0")
+doct = int(input())
+
+print("Puntos = ",3*papers+doct*10)
    
